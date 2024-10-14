@@ -5,7 +5,7 @@
     display: flex;
     box-sizing: border-box;
     width: 100%;
-    background-color: #ff2c2c;
+    background-color: #F8F6F0;
     height: 75px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, .3);
     align-items: center;
@@ -15,21 +15,23 @@
 }
 
 h1{
-    font-family: outfit;
+    font-family: 'Afacad Flux';
     padding-left: 20px;
-    color: white;
-    font-weight: 500;
+    color: black;
+    font-weight: medium;
     text-shadow: 0px 4px 4px rgba(0, 0, 15, .25);
     
 }
 .about_us{
-    font-family: outfit;
-    color: white;
+    font-family: 'Afacad Flux';
+    color: black;
     text-shadow: 0px 4px 4px rgba(0, 0, 15, .25);
-    font-size: 1.2em;
+    
     transition: .3s ease;
     text-decoration: none;
-    
+    font-size: 1.5rem;
+    font-weight: 500;
+
 }
 .about_us:hover{
     transform: scale(1.2);
@@ -41,7 +43,7 @@ h1:hover{
 }
 ul{
     list-style: none;
-    background: #ff2c2c;
+    background: #F8F6F0;
     padding-inline-start: 0px;
    margin-top: -1%;
 }
@@ -52,14 +54,15 @@ ul li {
 }
 ul li a{
     display: block;
-    padding: 25px 50px;
-    color: white;
+    padding: 20px 50px;
+    color: black;
     text-decoration: none;
     text-align: left;
     font-size: 20px;
-   font-family: outfit;
+   font-family: 'Afacad flux';
    font-size: 1.2em;
    text-shadow: 0px 4px 4px rgba(0, 0, 15, .25);
+   font-weight: medium;
    
 }
 ul li ul.dropdown li {
@@ -68,7 +71,7 @@ ul li ul.dropdown li {
 }
 ul li ul.dropdown{
     width: 100%;
-    background: #fd4242;
+    background: #eae8e3;
     position: absolute;
     z-index: 999;
     display: none;
@@ -85,16 +88,14 @@ ul li:hover ul.dropdown{
     
 }
 .menu{
-    font-family: outfit;
-    color: white;
+    color: black;
     text-shadow: 0px 4px 4px rgba(0, 0, 15, .25);
-    font-size: 1.2em;
     transition: .3s ease;
     margin-right: 5%;
     width: 5em;
     align-self: center;
     display: flex;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 .about{
     background-color: #ffffff;

@@ -1,9 +1,15 @@
 import NavBar from './components/NavBar.js'
-import './App.css';
+import Theme from './components/Theme.js'
+import './css/Banner.css'
 
 function App() {
   return (
-    <NavBar/>
+    <div>
+      <NavBar/>
+      <br></br>
+      <Theme/>
+    </div>
+    
   );
 }
 
