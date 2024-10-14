@@ -13,7 +13,6 @@ function NavBar(){
                 <li>
                     <a href="#" class="menu" ><MenuIcon sx={{ fontSize: 40 }}/></a>
                     
-                    
                     <ul class="dropdown">
                         <li><a href="">Divisas</a></li>
                         <li><a href="">Casas de cambio</a></li>
