@@ -1,8 +1,9 @@
+import MenuIcon from '@mui/icons-material/Menu';
 
 function NavBar(){
     return(
         <header class="banner">
-        <a href="" class= "logo_bann"><h1>Chef en Casa</h1></a>
+        <a href="" class= "logo_bann"><h1>Traveler's aid</h1></a>
         <nav class="btn_banner">
             <ul>
                 <a class="about_us" href="/html/about_us.html">Acerca de nosotros</a>
@@ -23,3 +24,5 @@ function NavBar(){
     </header>
     )
 }
+
+export default NavBar
