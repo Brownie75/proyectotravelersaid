@@ -3,6 +3,7 @@ import Theme from './components/Theme.js'
 import './css/Banner.css'
 
 function App() {
+  
   return (
     <div>
       <NavBar/>
