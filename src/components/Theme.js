@@ -11,7 +11,7 @@ function Theme(){
             
             <h2 style={{ font: "Afacad flux", color: theme === "light" ? "white" : "black",
           }}>Modo oscuro</h2>
-            <Switch onClick={toggleTheme}></Switch>
+            <Switch onClick={toggleTheme} defaultChecked></Switch>
         </div>
 
         
