@@ -15,7 +15,7 @@ function NavBar(){
         <ul style={{ backgroundColor: theme === "light" ? "#41424C" : "#F8F6F0",
         }}>
                 
-            <a class="about_us" href="/html/about_us.html" style={{ font: "Afacad flux", color: theme === "light" ? "white" : "black",
+            <a class="about_us" href="" style={{ font: "Afacad flux", color: theme === "light" ? "white" : "black",
           }}>Acerca de nosotros</a>
                 <li>
                     <a href="#" class="menu" style={{ font: "Afacad flux", color: theme === "light" ? "white" : "black",

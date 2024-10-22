@@ -2,6 +2,7 @@ import NavBar from './components/NavBar.js'
 import Theme from './components/Theme.js'
 import './css/Banner.css'
 import { useThemeStore } from './utils/themeStore.js';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   const theme = useThemeStore((state) => state.theme);
@@ -13,6 +14,12 @@ function App() {
       <NavBar/>
       <br></br>
       <Theme/>
+        <BrowserRouter>
+        <Routes>
+        
+        </Routes>
+        </BrowserRouter>
+      
     </div>
     </div>
     
