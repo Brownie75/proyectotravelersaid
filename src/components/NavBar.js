@@ -21,7 +21,7 @@ function NavBar(){
                     <a href="#" class="menu" style={{ font: "Afacad flux", color: theme === "light" ? "white" : "black",
           }}><MenuIcon sx={{ fontSize: 40 }}/></a>
                     
-                    <ul class="dropdown" style={{ backgroundColor: theme === "light" ? "#41424C" : "#F8F6F0",
+                    <ul class="dropdown" style={{ backgroundColor: theme === "light" ? "#41424C" : "#F8F6F0"
         }}>
                         <li><a href=""style={{ color: theme === "light" ? "white" : "black"
           }}>Divisas</a></li>
