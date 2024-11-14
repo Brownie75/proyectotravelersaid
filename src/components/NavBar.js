@@ -8,28 +8,28 @@ function NavBar(){
     return(
         <header class="banner" style={{ backgroundColor: theme === "light" ? "#41424C" : "#F8F6F0",
         }}>
-        <a href="" class= "logo_bann" style={{ font: "Afacad flux", color: theme === "light" ? "white" : "black",
+        <a href="#" class= "logo_bann" style={{ font: "Afacad flux", color: theme === "light" ? "white" : "black",
           }}><h1>Traveler's aid</h1></a>
         
         <nav class="btn_banner">
         <ul style={{ backgroundColor: theme === "light" ? "#41424C" : "#F8F6F0",
         }}>
                 
-            <a class="about_us" href="" style={{ font: "Afacad flux", color: theme === "light" ? "white" : "black",
+            <a class="#" href="#" style={{ font: "Afacad flux", color: theme === "light" ? "white" : "black",
           }}>Acerca de nosotros</a>
                 <li>
-                    <a href="#" class="menu" style={{ font: "Afacad flux", color: theme === "light" ? "white" : "black",
+                    <a href="/Divisas" class="menu" style={{ font: "Afacad flux", color: theme === "light" ? "white" : "black",
           }}><MenuIcon sx={{ fontSize: 40 }}/></a>
                     
                     <ul class="dropdown" style={{ backgroundColor: theme === "light" ? "#41424C" : "#F8F6F0"
         }}>
-                        <li><a href=""style={{ color: theme === "light" ? "white" : "black"
+                        <li><a href="/Divisas"style={{ color: theme === "light" ? "white" : "black"
           }}>Divisas</a></li>
-                        <li><a href=""style={{ color: theme === "light" ? "white" : "black",
+                        <li><a href="/Casas"style={{ color: theme === "light" ? "white" : "black",
           }}>Casas de cambio</a></li>
-                        <li><a href=""style={{ color: theme === "light" ? "white" : "black",
+                        <li><a href="#"style={{ color: theme === "light" ? "white" : "black",
           }}>Viajes</a></li>
-                        <li><a href=""style={{ color: theme === "light" ? "white" : "black",
+                        <li><a href="Hoteles"style={{ color: theme === "light" ? "white" : "black",
           }}>Hoteles</a></li>
                         
                     </ul>
