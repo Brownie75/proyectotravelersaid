@@ -4,8 +4,11 @@ import {Routes, Route} from 'react-router-dom'
 import IngresarDivisas from './components/Divisas';
 import Theme from './components/Theme';
 import NavBar from './components/NavBar'
+import { useThemeStore } from './utils/themeStore';
 
 function App() {
+  const theme = useThemeStore((state) => state.theme);
+
   return (
     <div style={{backgroundColor: theme === "light" ? "#41424C" : "#F8F6F0", minHeight:'100vh' }}>
       <div >
