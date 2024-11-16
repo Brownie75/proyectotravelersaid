@@ -3,21 +3,17 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{backgroundColor: theme === "light" ? "#41424C" : "#F8F6F0", minHeight:'100vh' }}>
+      <div >
+      <NavBar></NavBar>
+      <Theme/>
+        <Routes >
+          <Route path= "/Divisas" element = {<IngresarDivisas/>}></Route>
+          <Route path= "/Casas"></Route>
+          <Route path= "/Viajes"></Route>
+          <Route path= "/Hoteles"></Route>
+        </Routes>
+    </div>
     </div>
   );
 }
