@@ -1,3 +1,5 @@
+import {MenuIcon} from '@mui/icons-material'
+
 
 function NavBar(){
     return(

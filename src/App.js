@@ -1,5 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
+import {Routes, Route} from 'react-router-dom'
+import IngresarDivisas from './components/Divisas';
+import Theme from './components/Theme';
+import NavBar from './components/NavBar'
 
 function App() {
   return (
