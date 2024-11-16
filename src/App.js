@@ -4,6 +4,7 @@ import {Routes, Route} from 'react-router-dom'
 import IngresarDivisas from './components/Divisas';
 import Theme from './components/Theme';
 import NavBar from './components/NavBar'
+import './css/Banner.css'
 import { useThemeStore } from './utils/themeStore';
 
 function App() {
