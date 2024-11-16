@@ -1,7 +1,11 @@
-import {MenuIcon} from '@mui/icons-material'
+import { Menu as MenuIcon }  from '@mui/icons-material';
+import { useThemeStore } from '../utils/themeStore';
+import '../css/Banner.css'
 
 
 function NavBar(){
+    const theme = useThemeStore((state) => state.theme);
+    
     return(
         <header class="banner">
         <a href="" class= "logo_bann"><h1>Chef en Casa</h1></a>
