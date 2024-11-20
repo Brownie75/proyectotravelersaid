@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 
 
@@ -15,16 +15,12 @@ function IngresarDivisas(){
         headers: {
           Authorization: 'Bearer c86266179d76808931135a54'
         }
-        .then(response.json())
+        .then(response => response.json())
       })
     } catch (error) {
       console.log(error);
     }
   }
-
-  useEffect(() => {
-    Convert();
-    });
 
     return(
         <div style={{display:'flex', flex: 'row', marginTop: '8%'}}>
