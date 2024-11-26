@@ -8,8 +8,54 @@
     background-position: center;
 
 }
+.h2 {
+    font-family: "Afacad Flux";
+    letter-spacing: 5px;
+    font-size: 40px;
+}
 .h3 {
     font-family: "Afacad Flux";
     letter-spacing: 5px;
     font-size: 36px;
+}
+.recommendations_selector {
+    position: relative;
+    width: 90%;
+    background-color: #FCAA59;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 0 20px;
+    font-family: 'Afacad Flux';
+    letter-spacing: 3px;
+    z-index: 2;
+    border-radius: 25px;
+}
+.recommendations_box {
+    position: relative;
+    z-index: 1;
+    width: 90%;
+    padding: 0 20px;
+    margin: -40px auto 0 auto;
+    height: 250px;
+    background-color: #FFF8AA;
+}
+.expand_img {
+    cursor: pointer;
+    rotate: 0deg;
+    transition: 0.5s ease;
+}
+.checked .expand_img, .expand_img.checked{
+    rotate: 180deg;
+    
+}
+.convert_button {
+    width: 30%;
+    background-color: #3ACD2C;
+    border-radius: 25px;
+    border: none;
+    font-family: 'Afacad Flux';
+    font-size: 24px;
+    letter-spacing: 2px;
 }
