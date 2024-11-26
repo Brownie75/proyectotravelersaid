@@ -3,6 +3,7 @@ import styles from '../css/hotels.module.css'
 import { useState, useEffect, useMemo } from "react";
 import Cookies from "universal-cookie";
 import sites_data from "../hotels.json"
+import mapa from "../mapa.png"
 
 export default function ListaHoteles(){
 
@@ -64,13 +65,17 @@ export default function ListaHoteles(){
         <div className={styles.Fondo_imagen}>
         </div>
         <div className={styles.Contenedor}>
-            <div className={styles.buscador}></div>
+            <div className={styles.buscador}>
+                <h3 style={{letterSpacing: "1px"}}> Estos son tus resultados para</h3>
+                <img src={mapa} style={{position: "relative", width: "40%"}}></img>
+                <h3 style={{letterSpacing: "1px"}}>{JSON.parse(localStorage.getItem('loc')).city}, {JSON.parse(localStorage.getItem("loc")).city}</h3>
+            </div>
             <div className={styles.lista}>
                 {   
                     hotels.map((item,index) => {
                     return(
                         <div className={styles.cont_hotel} key={index}>
-                            <div style={{"width": "70%", "marginRight": "5%"}}>
+                            <div style={{"width": "70%", "marginRight": "5%", padding: "5% 0"}}>
                                 <h2>{item.name}</h2>
                                 <a href={sites[index] ? sites[index].url : ""}><button className={styles.site_button}>Sitio web</button></a>
                             </div>
