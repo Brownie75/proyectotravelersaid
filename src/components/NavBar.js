@@ -1,5 +1,6 @@
 import MenuIcon from '@mui/icons-material/Menu';
 import { useThemeStore } from '../utils/themeStore.js';
+import '../css/Banner.css'
 
 
   
@@ -9,15 +10,15 @@ function NavBar(){
         <header className="banner" style={{ backgroundColor: theme === "light" ? "#41424C" : "#F8F6F0",
         }}>
         <a href="/" 
-        className= "logo_bann" style={{ font: "Afacad flux", color: theme === "light" ? "white" : "black",
-          }}><h1>Traveler's aid</h1></a>
+        className= "logo_bann" style={{ font: "Afacad flux", letterSpacing: "5px", color: theme === "light" ? "white" : "black",
+          }}><h1>TRAVELER'S AID</h1></a>
         
         <nav className="btn_banner">
         <ul style={{ backgroundColor: theme === "light" ? "#41424C" : "#F8F6F0",
         }}>
-                
-            <a className="#" href="/about_us" style={{ font: "Afacad flux", color: theme === "light" ? "white" : "black",
-          }}>Acerca de nosotros</a>
+            <li>
+                <a className="#" href="/about_us" style={{ font: "Afacad flux", color: theme === "light" ? "white" : "black", padding: "35px 50px"}}>Acerca de nosotros</a>
+            </li>
                 <li>
                     <a href="/Divisas" className="menu" style={{ font: "Afacad flux", color: theme === "light" ? "white" : "black",
           }}><MenuIcon sx={{ fontSize: 40 }}/></a>

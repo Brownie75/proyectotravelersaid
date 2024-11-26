@@ -43,6 +43,8 @@ ul{
     
     padding-inline-start: 0px;
    margin-top: -1%;
+   display: flex;
+   align-items: center;
 }
 ul li {
     display: inline-block;
