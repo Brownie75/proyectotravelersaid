@@ -8,15 +8,14 @@ function NavBar(){
     return(
         <header class="banner" style={{ backgroundColor: theme === "light" ? "#41424C" : "#F8F6F0",
         }}>
-        <a href="#" class= "logo_bann" style={{ font: "Afacad flux", color: theme === "light" ? "white" : "black",
-          }}><h1>Traveler's aid</h1></a>
+        <a href="" class= "logo_bann" style={{ font: "Afacad flux", color: theme === "light" ? "white" : "black",
+          }}><h1>TRAVELER'S AID</h1></a>
         
         <nav class="btn_banner">
         <ul style={{ backgroundColor: theme === "light" ? "#41424C" : "#F8F6F0",
         }}>
                 
-            <a class="#" href="#" style={{ font: "Afacad flux", color: theme === "light" ? "white" : "black",
-          }}>Acerca de nosotros</a>
+            
                 <li>
                     <a href="/Divisas" class="menu" style={{ font: "Afacad flux", color: theme === "light" ? "white" : "black",
           }}><MenuIcon sx={{ fontSize: 40 }}/></a>
