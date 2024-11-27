@@ -16,9 +16,8 @@ function NavBar(){
         <nav className="btn_banner">
         <ul style={{ backgroundColor: theme === "light" ? "#41424C" : "#F8F6F0",
         }}>
-            <li>
-                <a className="#" href="/about_us" style={{ font: "Afacad flux", color: theme === "light" ? "white" : "black", padding: "35px 50px"}}>Acerca de nosotros</a>
-            </li>
+                
+            
                 <li>
                     <a href="/Divisas" className="menu" style={{ font: "Afacad flux", color: theme === "light" ? "white" : "black",
           }}><MenuIcon sx={{ fontSize: 40 }}/></a>
