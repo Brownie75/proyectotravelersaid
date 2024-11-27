@@ -19,6 +19,7 @@ export default function HomePage() {
             const loc_data = await fetch("https://ipinfo.io?token=7f7adabff145fe")
             .then(response => response.json())
             localStorage.setItem("loc",JSON.stringify(loc_data))
+            window.location.reload();
         }
     }
     useEffect(() => {
@@ -39,7 +40,7 @@ export default function HomePage() {
         }  
     }
     const loc_data = JSON.parse(localStorage.getItem("loc"));
-    console.log(recommend[loc_data.region][loc_data.city])
+    console.log(recommend["Chihuahua"]["Chihuahua"].tips)
     
     return (
         <div>
@@ -50,7 +51,7 @@ export default function HomePage() {
                 <img src={mapa} height={200} width={200} alt="icon_map"></img>
                 <div style={{width: "40%", paddingLeft: "50px", color: theme === 'light' ? 'white' : 'black'}}>
                     <h3 className={styles.h3} style={{letterSpacing: "10%"}}>Te encuentras en:</h3>
-                    <h3 className={styles.h3} style={{letterSpacing: "10%"}}>{JSON.parse(localStorage.getItem('loc')).city}, {JSON.parse(localStorage.getItem("loc")).city}</h3>
+                    <h3 className={styles.h3} style={{letterSpacing: "10%"}}>{loc_data ? loc_data.city : "???"}, {loc_data ? loc_data.region : "???"}</h3>
                 </div>
             </div>
             <div style={{paddingBottom: "30px"}}>
@@ -60,9 +61,15 @@ export default function HomePage() {
                 </div>
                     <div className={styles.recommendations_box} style={{display: collapse ? "block":"none", borderRadius: "25px"}}>
                         { collapse ? 
-                        <div style={{paddingTop: "50px"}}>
-                            <p></p>
-                            <img height={150} width={150} alt="imagen_ref"></img>
+                        <div style={{paddingTop: "50px", display: "flex", justifyContent: "center"}}>
+                            <div className={styles.tips_table}>
+                                {loc_data ? recommend[loc_data.region][loc_data.city].tips.map((elem, index) => {
+                                    return <div key={index} className={styles.tip}>
+                                        <h3>{elem.title}</h3>
+                                        <p>{elem.desc}</p>
+                                    </div>
+                                }) : "No se han encontrado datos..."}
+                            </div>
                         </div>: ""}
                     </div>
             </div>
@@ -86,14 +93,14 @@ export default function HomePage() {
                         { collapse2 ? 
                         <div style={{paddingTop: "50px", display: "flex", justifyContent: "center"}}>
                             <div className={styles.recommend_table}>
-                                {recommend[loc_data.region][loc_data.city].recommendations.map((elem, index) => {
+                                {loc_data ? recommend[loc_data.region][loc_data.city].recommendations.map((elem, index) => {
                                     return <div key={index} className={styles.recom}>
                                         <h3>{elem.option}</h3>
                                         <p>{elem.desc}</p>
                                     </div>
-                                })}
+                                }) : "No se han encontrado datos..."}
                             </div>
-                            <img className={styles.recom_img} src={recommend[loc_data.region][loc_data.city].url} alt="puertaChih"></img>
+                            <img className={styles.recom_img} src={loc_data ? recommend[loc_data.region][loc_data.city].url: ""} alt="puertaChih"></img>
                         </div>: ""}
                     </div>
             </div>

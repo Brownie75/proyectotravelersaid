@@ -88,3 +88,14 @@
     border-radius: 25px;
     border: 2px solid black;
 }
+.tips_table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.tip {
+    width: 25%;
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 10px 10px 0 10px;
+}

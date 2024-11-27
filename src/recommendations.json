@@ -14,8 +14,22 @@
                 "option": "Visita la puerta de Chihuahua",
                 "desc": "La puerta de Chihuahua es un monumento enorme ubicado en los confines de la ciudad, tomate unas fotos por allá."
             }
-        ],
-        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Puertachihuahua.JPG"
+            ],
+            "url": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Puertachihuahua.JPG",
+            "tips": [
+                {
+                    "title": "Revisa el clima",
+                    "desc": "Chihuahua es una ciudad de clima generalmente seco y caluroso, y en temporadas frias puede ponerse bastante helado, asi que revisa bien tu pronóstico del clima."
+                },
+                {
+                    "title": "Prueba la comida local",
+                    "desc": "La ciudad posee una enorme variedad de locales y establecimientos independientes con comida de excelente de calidad, y de todos los tipos de comida, en especial burritos, mariscos y taquerías."
+                },
+                {
+                    "title": "Usa el transporte público",
+                    "desc": "Si eres más de caminar, Chihuahua cuanta con su propio servicio de transporte público, Bowi, que conecta varias localidades de la ciudad a través de una sola linea troncal. La tarjeta para acceder a este transporte tiene un valor de $30 pesos, 1 - 2 dolares más o menos."
+                }
+            ]
         }
     }
 }

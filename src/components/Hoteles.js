@@ -52,12 +52,15 @@ export default function ListaHoteles(){
                     .then(data => data.data);
                     
                     localStorage.setItem("hotelInfo",JSON.stringify(data));
+                    window.location.reload();
                 })
                     
             }
         }
         getInfo()
     },[cookies]);
+
+    const loc_data = JSON.parse(localStorage.getItem("loc"))
 
     return(
     <>
@@ -68,7 +71,7 @@ export default function ListaHoteles(){
             <div className={styles.buscador}>
                 <h3 style={{letterSpacing: "1px"}}> Estos son tus resultados para</h3>
                 <img src={mapa} style={{position: "relative", width: "40%"}} alt="loc_icon"></img>
-                <h3 style={{letterSpacing: "1px"}}>{JSON.parse(localStorage.getItem('loc')).city}, {JSON.parse(localStorage.getItem("loc")).city}</h3>
+                <h3 style={{letterSpacing: "1px"}}>{loc_data ? loc_data.city:""}, {loc_data ? loc_data.city:""}</h3>
             </div>
             <div className={styles.lista}>
                 {   
