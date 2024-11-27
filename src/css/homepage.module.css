@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+
+.Fondo_imagen{
+    background-image: url("https://www.bbva.com/wp-content/uploads/2020/12/turismo_sostenible.jpg");
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+
+}
+.h2 {
+    font-family: "Afacad Flux";
+    letter-spacing: 5px;
+    font-size: 40px;
+}
+.h3 {
+    font-family: "Afacad Flux";
+    letter-spacing: 5px;
+    font-size: 36px;
+}
+.recommendations_selector {
+    position: relative;
+    width: 90%;
+    background-color: #FCAA59;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 0 20px;
+    font-family: 'Afacad Flux';
+    letter-spacing: 3px;
+    z-index: 2;
+    border-radius: 25px;
+}
+.recommendations_box {
+    position: relative;
+    z-index: 1;
+    width: 90%;
+    padding: 0 20px 10px 20px;
+    margin: -40px auto 0 auto;
+    height: fit-content;
+    background-color: #FFF8AA;
+}
+.expand_img {
+    cursor: pointer;
+    rotate: 0deg;
+    transition: 0.5s ease;
+}
+.checked .expand_img, .expand_img.checked{
+    rotate: 180deg;
+    
+}
+.convert_button {
+    width: 30%;
+    background-color: #3ACD2C;
+    border-radius: 25px;
+    border: none;
+    font-family: 'Afacad Flux';
+    font-size: 24px;
+    letter-spacing: px;
+    transition: 0.5s ease;
+}
+.convert_button:hover {
+    background-color: #046b01;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer
+}
+.recommend_table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.recom {
+    width: 25%;
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 10px 10px 0 10px;
+    margin-right: 5%;
+}
+.recom h3 {
+    margin-top: 0;
+}
+.recom_img {
+    width: 20%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 25px;
+    border: 2px solid black;
+}
+.tips_table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.tip {
+    width: 25%;
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 10px 10px 0 10px;
+}
