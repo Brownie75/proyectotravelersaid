@@ -36,9 +36,9 @@
     position: relative;
     z-index: 1;
     width: 90%;
-    padding: 0 20px;
+    padding: 0 20px 10px 20px;
     margin: -40px auto 0 auto;
-    height: 250px;
+    height: fit-content;
     background-color: #FFF8AA;
 }
 .expand_img {
@@ -57,5 +57,34 @@
     border: none;
     font-family: 'Afacad Flux';
     font-size: 24px;
-    letter-spacing: 2px;
+    letter-spacing: px;
+    transition: 0.5s ease;
+}
+.convert_button:hover {
+    background-color: #046b01;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer
+}
+.recommend_table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.recom {
+    width: 25%;
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 10px 10px 0 10px;
+    margin-right: 5%;
+}
+.recom h3 {
+    margin-top: 0;
+}
+.recom_img {
+    width: 20%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 25px;
+    border: 2px solid black;
 }

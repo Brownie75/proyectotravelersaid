@@ -67,7 +67,7 @@ export default function ListaHoteles(){
         <div className={styles.Contenedor}>
             <div className={styles.buscador}>
                 <h3 style={{letterSpacing: "1px"}}> Estos son tus resultados para</h3>
-                <img src={mapa} style={{position: "relative", width: "40%"}}></img>
+                <img src={mapa} style={{position: "relative", width: "40%"}} alt="loc_icon"></img>
                 <h3 style={{letterSpacing: "1px"}}>{JSON.parse(localStorage.getItem('loc')).city}, {JSON.parse(localStorage.getItem("loc")).city}</h3>
             </div>
             <div className={styles.lista}>
@@ -82,7 +82,7 @@ export default function ListaHoteles(){
                             <div>
                                 <img className={styles.imagen} height={200} width={200}
                                     src={sites[index] ? sites[index].img : ""}
-                                />
+                                    alt="hotel_image"/>
                             </div>
                         </div>
                     )

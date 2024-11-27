@@ -1,0 +1,21 @@
+{
+    "Chihuahua": {
+        "Chihuahua": {
+            "recommendations": [
+            {
+                "option": "Visita el centro",
+                "desc": "Alrededor de la calle Libertad y la calle Victoria, se encuentra la Catedral de Chihuahua, con más de 200 años de antiguedad. A su alrededor, se concentra todo tipo de establecimientos para pasar el tiempo."
+            },
+            {
+                "option": "Sal al parque",
+                "desc": "Entre las esquinas de la ciudad se encuentran la deportiva norte y sur, donde se puede experimentar multiples experiencias de deportes, atletismo, ciclismo y otras actividades para toda la familia."
+            },
+            {
+                "option": "Visita la puerta de Chihuahua",
+                "desc": "La puerta de Chihuahua es un monumento enorme ubicado en los confines de la ciudad, tomate unas fotos por allá."
+            }
+        ],
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Puertachihuahua.JPG"
+        }
+    }
+}
